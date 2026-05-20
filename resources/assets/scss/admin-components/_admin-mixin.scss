@@ -1,0 +1,33 @@
+@mixin border-radius($value:5px) {
+    -webkit-border-radius: $value !important;
+    border-radius: $value !important;
+    -moz-border-radius: $value !important;
+}
+
+@mixin flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@mixin flex-justify-content($a:center) {
+    -webkit-box-pack: $a;
+    -ms-flex-pack: $a;
+    justify-content: $a;
+}
+
+@mixin flex-align-items($a:center) {
+    -webkit-box-align: $a;
+    -ms-flex-align: $a;
+    align-items: $a;
+}
+
+@mixin transition($a:0.3s) {
+    -webkit-transition: all $a ease;
+    -moz-transition: all $a ease;
+    -ms-transition: all $a ease;
+    -o-transition: all $a ease;
+    transition: all $a ease;
+}

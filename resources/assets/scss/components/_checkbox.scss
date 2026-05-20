@@ -1,0 +1,147 @@
+.custom-radio,
+.custom-checkbox {
+    list-style: none;
+    &:after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+    &--inline-block {
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        @include flex;
+        @include flex-justify-content(flex-start);
+    }
+    &__item {
+        /* The container */
+        // width: calc(100%/3);
+        margin: 0 !important;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-top: 10px;
+        &--holder {
+            display: block;
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            font-size: .9em;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            input {
+                &:checked {
+                    /* When the checkbox is checked, add a blue background */
+                    ~.checkmark {
+                        background-color: $color-secondary;
+                        border: 0;
+                        /* Show the checkmark when checked */
+                        &:after {
+                            display: block;
+                        }
+                        &:before {
+                            width: 8px;
+                            height: 8px;
+                            content: '';
+                            background: $color-secondary;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            top: 0;
+                            bottom: 0;
+                            border-radius: 100%;
+                            display: block;
+                            z-index: 9;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                input {
+                    /* On mouse-over, add a grey background color */
+                    ~.checkmark {
+                        background-color: #fff;
+                        border: 2px solid $color-secondary;
+                    }
+                }
+            }
+            /* Hide the browser's default checkbox */
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+        }
+    }
+    /* Create a custom checkbox */
+    &__checkmark {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        // height: 25px;
+        // width: 25px;
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        border: 1px solid #000;
+        right: inherit;
+        margin: auto;
+        border-radius: 100%;
+        top: 0;
+        /* Create the checkmark/indicator (hidden when not checked) */
+        &:after {
+            content: '';
+            position: absolute;
+            display: none;
+            // font: normal normal normal 14px/1 FontAwesome;
+            // font-size: inherit;
+            // text-rendering: auto;
+            // -webkit-font-smoothing: antialiased;
+            // -moz-osx-font-smoothing: grayscale;
+            // padding-top: 1px;
+            background: $sprite-all !important;
+            color: $color-white;
+            font-size: 11px;
+            width: 14px;
+            height: 14px;
+            background-position: -319px -33px !important;
+            background-color: $color-white !important;
+        }
+        /* Style the checkmark/indicator */
+        &:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid $color-white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        &--boxstyle {
+            &:after {
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                // width: 15px;
+                // height: 15px;
+                width: 14px;
+                height: 14px;
+                // background: #cda85a;
+                background: $color-secondary;
+                border-radius: 100%;
+                border: 0;
+                transform: inherit;
+            }
+        }
+    }
+}

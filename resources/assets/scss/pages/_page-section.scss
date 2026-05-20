@@ -1,0 +1,37 @@
+.page {}
+
+.dashboard {
+    &--support {
+        ul.helper {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
+            width: 100%;
+            li {
+                margin-bottom: 5px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                    color: #585e62;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &--account-settings {
+        .card.accordion__item {
+            border-radius: 10px !important;
+        }
+        .accordion__header a {
+            background: #fff !important;
+            border-bottom: 1px solid #ddd;
+        }
+        .contact-form {
+            box-shadow: inherit;
+            padding: 0;
+            padding: 0 20px;
+        }
+    }
+}

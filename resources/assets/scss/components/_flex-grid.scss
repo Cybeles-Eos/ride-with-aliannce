@@ -1,0 +1,22 @@
+.flex {
+    @include flex;
+    @include flex-justify-content(center);
+
+    &--col4 {
+        div {
+            width: calc(100%/4);
+        }
+    }
+
+    &--col3 {
+        div {
+            width: calc(100%/3);
+        }
+    }
+
+    &--col2 {
+        div {
+            width: calc(100%/2);
+        }
+    }
+}

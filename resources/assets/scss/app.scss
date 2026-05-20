@@ -1,0 +1,47 @@
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import "~magnific-popup/src/css/main";
+@import "~aos/src/sass/aos";
+@import "./vendor/scrolling-nav";
+//@import "~font-awesome/scss/font-awesome.scss";
+@import "./vendor/variables";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~slick-carousel/slick/slick';
+@import '~slick-carousel/slick/slick-theme';
+@import "~select2/dist/css/select2";
+@import "~cookieconsent/build/cookieconsent.min.css";
+// variables
+@import "utilities/mixin";
+@import "utilities/variables";
+@import "utilities/colors";
+@import "utilities/typography";
+@import "utilities/global-resets";
+// Custom components
+@import "components/button";
+@import "components/header";
+@import "components/banner";
+@import "components/sidebars";
+@import "components/headings";
+@import "components/footer";
+@import "components/flex-grid";
+@import "components/form";
+@import "components/mobile-menu";
+@import "components/pagination";
+@import "components/search-box";
+@import "components/main-page";
+@import "components/subpages";
+@import "components/sliders";
+@import "components/modal";
+@import "browsers/safari-only";
+@import "browsers/firefox-only";
+@import "browsers/ie-only";
+@import "components/checkbox";
+// Pages
+@import "pages/home";
+@import "pages/page-section";
+// @import "pages/contact-us";
+
+@import "custom/admin-custom";

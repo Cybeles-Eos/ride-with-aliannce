@@ -1,0 +1,141 @@
+.themed-background {
+    &.btn {
+        &--primary {
+            background: $color-third;
+            background-color: $color-third;
+            display: block;
+            border-radius: 0;
+        }
+    }
+}
+
+.widget-extra {
+    &.themed-background {
+        background: $color-third;
+        background-color: $color-third;
+        display: block;
+        display: block;
+        border-radius: 0;
+    }
+}
+
+.widget-extra-full {
+    i.fa.fa-plus {
+        color: $color-primary;
+    }
+}
+
+.btn-group {
+    a {
+        margin: 0px 5px !important;
+        display: inline-block;
+    }
+}
+
+.btn-danger,
+.delete-contact-btn,
+.delete-page-btn {
+    background: $color-secondary;
+    color: $color-white;
+    margin: 0;
+    display: inline-block;
+    @include border-radius(3px);
+    border: 1px solid transparent;
+    @include transition(.5s);
+    &:hover {
+        background: $color-primary;
+        border: 1px solid transparent;
+    }
+}
+
+.btn.btn-default {
+    margin: 0;
+    @include border-radius(3px);
+    color: $color-dark;
+    border: 1px solid $color-gray;
+    @include transition(.5s);
+    i {
+        color: $color-dark;
+    }
+}
+
+.btn {
+    &__status {
+        padding: 2px;
+        width: 100%;
+        text-transform: capitalize;
+        color: $color-white;
+        font-size: 1em;
+        font-weight: 600 !important;
+        &--pending {
+            background: $color-brown;
+        }
+        &--confirmed {
+            background: $color-orange;
+        }
+        &--pendingcontract {
+            background: $color-violet;
+        }
+        &--pendingpayment {
+            background: $color-green;
+        }
+        &--paidinfull {
+            background: $color-dark;
+        }
+        &--hostconfirmation {
+            background: $color-orange;
+        }
+        &--prearrival {
+            background: $color-brown;
+        }
+        &--infosent {
+            background: $color-brown;
+        }
+        &--pendingdamage {
+            background: $color-violet;
+        }
+        &--pendingrefund {
+            background: $color-violet;
+        }
+        &--damagesolution {
+            background: $color-gray;
+        }
+        &--damageresolved {
+            background: $color-gray;
+        }
+        &--pendinginvoicepayment {
+            background: $color-violet;
+        }
+        &--bookclosed {
+            background: $color-dark;
+        }
+        &--partialpaymentreceived {
+            background: $color-orange;
+        }
+        &--cancelrequest {
+            background: $color-violet;
+        }
+    }
+    &.btn-warning {
+        background-color: $color-dark;
+        border-color: $color-dark;
+    }
+    &.btn-primary {
+        background-color: $color-primary;
+        border-color: $color-primary;
+    }
+    &--download {
+        background: #3063cc;
+        display: block !important;
+        width: 100%;
+        border-radius: 3px !important;
+        color: #fff !important;
+    }
+    &--primary {
+        background: #3063cc;
+        display: block !important;
+        width: 100%;
+        border-radius: 3px !important;
+        color: #fff !important;
+    }
+}

@@ -1,0 +1,23 @@
+/*
+ * This file will contain sql update scripts
+ *
+ * Note: place recent scripts on top
+ * Sample:
+ * --March 7, 2017
+ * ALTER TABLE customers DROP INDEX primary_contact_no_idx;
+ *
+ * --March 6, 2017
+ * DELETE FROM help_topics WHERE help_topics.id = 2;
+ * DELETE FROM help_topics WHERE help_topics.id = 3;
+ *
+ */
+
+-- March 22, 2017
+INSERT INTO `system_settings` (`id`, `code`, `name`, `value`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'SS0001', 'Initial Parking Hours', '3', NOW(), NOW(), NULL),
+(2, 'SS0002', 'Initial Parking Fee', '50', NOW(), NOW(), NULL),
+(3, 'SS0003', 'Additional Parking Fee Per Hour', '20', NOW(), NOW(), NULL);
+
+-- March 14, 2017
+ALTER TABLE `users` CHANGE `name` `firstname` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL;
+ALTER TABLE `users` ADD `lastname` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `firstname`;

@@ -1,0 +1,4 @@
+php artisan iseed cities,contacts,countries,page_sections,page_types,pages,permission_groups,permissions,posts,role_has_permissions,roles,seo_metas,states,system_settings,user_has_permissions,user_has_roles,users --force
+test
+test1
+test2

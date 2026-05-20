@@ -1,0 +1,29 @@
+// .primary-heading {
+//     margin-bottom: 45px;
+//     h2 {
+//          font-size: 3.6em;
+//          span {
+//          }
+//     }
+// }
+// .secondary-heading {
+//     h2 {
+//         font-weight: 900;
+//         font-size: 3.6em;
+//         color: $color-secondary;
+//         margin-bottom: 35px;
+//     }
+// }
+.heading-primary {
+    margin-bottom: 25px;
+    h2,
+    h3 {
+        margin-bottom: 0 !important;
+        font-weight: bold;
+        color: $color-navy;
+    }
+    p {
+        font-size: 1.6em !important;
+        line-height: 30px;
+    }
+}

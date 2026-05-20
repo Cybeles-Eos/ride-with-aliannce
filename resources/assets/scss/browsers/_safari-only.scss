@@ -1,0 +1,56 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    // ::i-block-chrome,
+    // .sub-banner__wrapper {
+    //     height: 118px;
+    // }
+}
+
+
+/* Safari 11+ */
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+        // .sub-banner__wrapper {
+        //     height: 118px;
+        // }
+        // .services__banner--image h2 {
+        //     bottom: 40px;
+        // }
+        // .featured-destinations__banner h2 {
+        //     bottom: 42px;
+        // }
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) and (not (stroke-color: transparent)) {
+        // .sub-banner__wrapper {
+        //     height: 118px;
+        // }
+    }
+}
+
+
+/* Safari 9.0-10.0 (not 10.1) */
+
+_::-webkit-:not(:root:root),
+.sub-banner__wrapper {
+    height: 118px;
+}
+
+_::-webkit-:not(:root:root),
+.featured-destinations__banner h2 {
+    bottom: 42px;
+}
+
+
+/* Safari 9 */
+
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+    // .sub-banner__wrapper {
+    //     height: 118px;
+    // }
+}
+
+// for safari mac only
+.mac-chrome {}

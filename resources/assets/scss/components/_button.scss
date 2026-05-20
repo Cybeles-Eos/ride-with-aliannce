@@ -1,0 +1,195 @@
+.btn {
+    &--primary {
+        background: $color-red2;
+        border: 2px solid transparent;
+        color: $color-white;
+        padding: 8px 44px;
+        font-family: $font-third;
+        font-weight: normal;
+        border-radius: 3px;
+        font-size: 18px;
+        text-align: center;
+        @include transition(.5s);
+        text-decoration: none !important;
+        text-transform: uppercase;
+        @media only screen and (max-width: $mobile) {
+            padding: 10px 30px;
+            font-size: .9em;
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+        &:hover {
+            color: $color-black;
+            border: 2px solid $color-black;
+            background: $color-white;
+        }
+        &--inverse {
+            color: $color-black;
+            border: 2px solid $color-black;
+            background: $color-white;
+            padding: 8px 44px;
+            font-family: $font-third;
+            font-weight: normal;
+            border-radius: 3px;
+            font-size: 18px;
+            text-align: center;
+            @include transition(.5s);
+            text-decoration: none !important;
+            text-transform: uppercase;
+            &:hover {
+                background: $color-red2;
+                border: 2px solid transparent;
+                color: $color-white;
+            }
+        }
+    }
+    &--secondary {
+        background: $color-third;
+        border: 0;
+        padding: 17px 44px;
+        font-weight: 900;
+        border-radius: 0;
+        font-size: 1em;
+        color: $color-white;
+        @include border-radius(100px);
+        @include transition(.3);
+        @media only screen and (max-width: $mobile) {
+            padding: 10px 30px;
+            font-size: .9em;
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+        &:hover {
+            color: $color-white;
+            background: $color-primary;
+        }
+    }
+    &--search {
+        background-color: $color-navy;
+        color: $color-white;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 8px 16px;
+        width: 168px;
+        text-align: center;
+        max-width: 100%;
+        display: inline-block;
+        border-radius: 0;
+        @include transition(0.5s);
+        border: 2px solid $color-navy;
+        &:hover {
+            border: 2px solid $color-navy;
+            color: $color-navy;
+            background-color: $color-white;
+        }
+    }
+    &--scroll-down {
+        color: $color-white;
+        background-color: $color-navy;
+        border: 1px solid $color-white;
+        padding: 5px 12px;
+        border-radius: 100%;
+        &:hover {
+            background-color: $color-darkred;
+            @include transition(0.5s);
+            color: $color-white;
+        }
+    }
+    &--white {
+        color: $color-white;
+        border: 2px solid $color-white;
+        background: transparent;
+        padding: 8px 44px;
+        font-family: $font-third;
+        font-weight: normal;
+        border-radius: 3px;
+        font-size: 18px;
+        text-align: center;
+        @include transition(.5s);
+        text-decoration: none !important;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $color-darkred;
+            @include transition(0.5s);
+            color: $color-white;
+            border: 2px solid $color-darkred;
+        }
+    }
+    &--view {
+        padding: 0;
+        color: $color-secondary;
+        font-weight: 600;
+        @include transition(.4s);
+        &:after {
+            content: '';
+            width: 19px;
+            background: $sprite-all;
+            background-position: -282px -68px;
+            height: 12px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        &:hover {
+            @include transform_translate(10px, 0);
+        }
+    }
+    &--back {
+        font-weight: bold;
+        padding: 0;
+        margin: 10px 0;
+        @include transition(.4s);
+        &:before {
+            content: '';
+            width: 19px;
+            background: $sprite-all;
+            background-position: -259px -68px;
+            height: 12px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        &:hover {
+            @include transform_translate(10px, 0);
+        }
+    }
+    &--header {
+        display: inline-block;
+        border: 1px solid #c4c4c4;
+        color: #0b476c;
+        font-weight: 600;
+        padding: 14px 0;
+        width: 100%;
+        &:hover {
+            background: $color-primary;
+            color: $color-white;
+        }
+    }
+    &--view {
+        display: inline-block;
+        border: 1px solid #c4c4c4;
+        color: #0b476c;
+        font-weight: 600;
+        padding: 19px 0;
+        width: 100%;
+    }
+    &--status-incomplete {
+        width: 100%;
+        background: #ead4d4;
+        color: #af191a !important;
+        padding: 10px;
+        font-weight: 600;
+    }
+    &--status-completed {
+        width: 100%;
+        background: #a3f3a7;
+        color: #176d1b !important;
+        padding: 10px;
+        font-weight: 600;
+    }
+    &--select {
+        border: 1px solid $color-navy;
+        text-transform: uppercase;
+        font-size: .9em;
+    }
+}

@@ -1,0 +1,13 @@
+body {
+    background-color: #fff !important;
+}
+
+.exp-banner-body-generic {
+    color: #204b73 !important;
+}
+
+.exp-capabilities-info-other ul {
+    list-style-type: square;
+    padding-left: 20px;
+    list-style-image: url(../img/icon/list-style-type-image.png);
+}

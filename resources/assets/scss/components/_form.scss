@@ -1,0 +1,279 @@
+.contact-form {
+    padding: 35px 35px;
+    -webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .3);
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .3);
+    @include border-radius(0);
+    background: $color-white;
+    .row {
+        div {
+            padding: 0;
+        }
+    }
+    p {
+        font-size: .9em;
+        font-style: italic;
+        color: $color-gray;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        &.form-box {
+            .form-group {
+                padding: 10px !important;
+                box-sizing: border-box;
+                label {
+                    display: none;
+                }
+                select,
+                input,
+                textarea {
+                    border: 0;
+                    padding: 15px;
+                    @include border-radius(0);
+                    padding: 15px;
+                    border-bottom: 1px solid #ddd;
+                }
+                select {
+                    width: 100%;
+                    color: #7a7a7a;
+                    text-transform: capitalize;
+                    padding: 0px 15px;
+                }
+            }
+        }
+    }
+}
+
+.form-section {
+    .row {
+        margin: 0;
+    }
+    .form-box {
+        >div {
+            margin-bottom: 0 !important;
+        }
+        .form-group {
+            padding: 10px !important;
+            box-sizing: border-box;
+            label {
+                display: none;
+            }
+            &.show-label {
+                label {
+                    display: block;
+                }
+                li.custom-checkbox__item:before {
+                    display: none;
+                }
+            }
+            select,
+            input,
+            textarea {
+                @include border-radius(5px);
+                padding: 15px;
+                border-radius: 1px solid #ddd;
+                height: 60px;
+            }
+            select {
+                width: 100%;
+                color: #7a7a7a;
+                text-transform: capitalize;
+                padding: 0px 15px;
+            }
+            button.btn.btn--primary {
+                display: inline-block;
+                width: auto;
+                padding: 10px 40px;
+            }
+        }
+    }
+}
+
+// .product-search-form {
+//     .row {
+//         div {
+//             padding:0;
+//         }
+//     }
+//     ul {
+//         margin: 0;
+//         padding: 0;
+//         &.form-box {
+//             li {
+//                 display: block;
+//                 position: relative;
+//                 margin-bottom: 20px;
+//                 &:first-child {
+//                     padding-right: 10px;
+//                 }
+//                 &:nth-child(2) {
+//                     padding-left: 10px;
+//                 }
+//                 .container {
+//                     padding: 0;
+//                     div {
+//                         padding: 0;
+//                     }
+//                 }
+//                 input,
+//                 select {
+//                     display: block;
+//                     width: 100%;
+//                     //padding: 11px;
+//                     background: transparent;
+//                     border: 2px solid $color-gray2;
+//                     @include transition(.3s);
+//                     outline: none !important;
+//                     &:active,
+//                     &:focus {
+//                         outline: none !important;
+//                     }
+//                 }
+//                 input {
+//                     padding-left: 225px;
+//                     @media only screen and (max-width:$mobile) {
+//                         font-size: 11px;
+//                     }
+//                 }
+//                 select {
+//                     // padding-left: 80px;
+//                     @media only screen and (max-width:$mobile) {
+//                         font-size: 11px;
+//                     }
+//                 }
+//                 label {
+//                     position: absolute;
+//                     left: 25px;
+//                     height: 18px;
+//                     top: 10px;
+//                     margin: auto;
+//                     text-transform: capitalize;
+//                     color: $color-secondary;
+//                     font-size: 12px;
+//                     @include transition(.3s);
+//                     font-weight: 500;
+//                     font-size: .9em;
+//                     font-weight: $weight-extrabold;
+//                     @media only screen and (max-width:$mobile) {
+//                         font-size: 11px;
+//                     }
+//                 }
+//                 span {
+//                     padding: 2px 5px;
+//                     display: block;
+//                     // width: 50%;
+//                     font-size: 12px;
+//                     color: $color-white;
+//                     margin-top: 5px;
+//                     background: $color-secondary;
+//                 }
+//                 button {
+//                     &:hover {
+//                         background: $color-secondary !important;
+//                         border: 1px solid transparent;
+//                         color: $color-white;
+//                     }
+//                 }
+//                 &.padding-left-more {
+//                     input {
+//                         padding-left: 200px !important;
+//                     }
+//                 }
+//                 &:after {
+//                     display: block;
+//                     clear: both;
+//                     content: '';
+//                 }
+//                 @keyframes motion-background {
+//                     0% {
+//                         background: transparent;
+//                     }
+//                     50% {
+//                         background: #fff;
+//                     }
+//                     100% {
+//                         background: transparent;
+//                     }
+//                 }
+//                 @-webkit-keyframes motion-background {
+//                     0% {
+//                         background: transparent;
+//                     }
+//                     50% {
+//                         background: #fff;
+//                     }
+//                     100% {
+//                         background: transparent;
+//                     }
+//                 }
+//                 @-moz-keyframes motion-background {
+//                     0% {
+//                         background: transparent;
+//                     }
+//                     50% {
+//                         background: #fff;
+//                     }
+//                     100% {
+//                         background: transparent;
+//                     }
+//                 }
+//                 // contact on focus of field
+//                 &.active {
+//                     label {
+//                         position: absolute;
+//                         // top: -7px !important;
+//                         // left: 0 !important;
+//                         background: $color-secondary;
+//                         padding: 0 10px;
+//                         font-size: 11px !important;
+//                         color: #fff !important;
+//                         left: 15px;
+//                         top: -10px;
+//                     }
+//                     input,
+//                     select {
+//                         // padding: 15px 10px !important;
+//                         animation: motion-background 1s infinite;
+//                         -webkit-animation: motion-background 1s infinite;
+//                         -moz-animation: motion-background 1s infinite;
+//                         color: $color-secondary;
+//                         font-weight: bold;
+//                         padding-left: 10px;
+//                         border: 2px solid $color-secondary;
+//                         outline: none;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     &__item {
+//         position: relative;
+//         ul.form-box {
+//             li {
+//                 input,
+//                 select {
+//                     border: 2px solid transparent !important;
+//                 }
+//             }
+//         }
+//         &--border {
+//             padding-left: 95px;
+//             input,
+//             select {
+//                 border: 2px solid transparent !important;
+//             }
+//             &:after {
+//                 position: absolute;
+//                 width: 95%;
+//                 height: 2px;
+//                 background: $color-red;
+//                 bottom: 0%;
+//                 left: 0;
+//                 right: 0;
+//                 margin: auto;
+//                 content: '';
+//             }
+//         }
+//     }
+// }
+// ?

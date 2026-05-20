@@ -1,0 +1,142 @@
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body {
+    font-family: $font-primary;
+    // background-image: url('../images/overlay.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+ul {
+    &.inline-block {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    &.img-responsive {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .margin {
+        &--top50 {
+            margin-top: 50px !important;
+        }
+        &--top40 {
+            margin-top: 40px !important;
+        }
+        &--top30 {
+            margin-top: 30px !important;
+        }
+        &--bottom40 {
+            margin-bottom: 40px;
+        }
+        &--bottom50 {
+            margin-bottom: 50px;
+        }
+        &--bottom60 {
+            margin-bottom: 60px;
+        }
+        &--bottom70 {
+            margin-bottom: 70px;
+        }
+        &--both70 {
+            margin-bottom: 70px;
+            margin-top: 70px;
+        }
+        &--both80 {
+            margin-bottom: 80px;
+            margin-top: 80px;
+        }
+    }
+}
+
+.padding {
+    &--top1em {
+        padding-top: 1em;
+    }
+    &--top2em {
+        padding-top: 2em;
+    }
+    &--top3em {
+        padding-top: 3em;
+    }
+    &--top4em {
+        padding-top: 4em;
+    }
+    &--top5em {
+        padding-top: 5em;
+    }
+    &--bottom1em {
+        padding-bottom: 1em;
+    }
+    &--bottom2em {
+        padding-bottom: 2em;
+    }
+    &--bottom3em {
+        padding-bottom: 3em;
+    }
+    &--bottom4em {
+        padding-bottom: 4em;
+    }
+    &--bottom5em {
+        padding-bottom: 5em;
+    }
+}
+
+.image-background {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    // background-color: #000;
+    width: 100%;
+    min-height: 150px;
+    >img {
+        position: relative;
+        z-index: 1;
+        display: none !important;
+    }
+    a {
+        >img {
+            display: none;
+        }
+    }
+}
+
+.invisible {
+    display: none !important;
+}
+
+.row {
+    &::before,
+    &::after {
+        display: inline-block !important;
+    }
+}
+
+.container {
+    @media (min-width: 1200px) {
+        max-width: 1400px;
+    }
+}
+
+.mobile-center {
+    @media (max-width: 991px) {
+        text-align: center;
+    }
+}
+
+.default-container {
+    overflow: hidden;
+}

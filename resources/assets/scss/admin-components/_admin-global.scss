@@ -1,0 +1,905 @@
+.preloader.themed-background {
+    background: $color-primary;
+    background-color: $color-primary;
+}
+
+.themed-background {
+    &--orange {
+        background-color: $color-orange;
+    }
+    &--violet {
+        background-color: $color-violet;
+    }
+    &--green {
+        background-color: $color-green;
+    }
+}
+
+ul.sidebar-section.sidebar-themes {
+    display: none;
+}
+
+.widget-simple {
+    &__middle {
+        @include flex;
+        @include flex-align-items(center);
+        @include flex-justify-content(center);
+        .widget-content {
+            width: 50%;
+            color: $color-blue;
+            small {
+                color: $color-dark;
+            }
+        }
+    }
+}
+
+.block-title {
+    &__big {
+        background: $color-primary;
+        background-color: $color-primary;
+        padding: 11px 10px;
+        h2 {
+            color: $color-white;
+        }
+        strong {
+            text-transform: capitalize;
+        }
+        a {
+            color: $color-brown;
+            font-weight: bold;
+            text-transform: capitalize;
+            text-decoration: none;
+            margin-left: 10px;
+            @include transition(.3s);
+            &:hover {
+                opacity: .4;
+            }
+        }
+    }
+    &__full {
+        @include flex;
+        @include flex-justify-content(space-between);
+        @include flex-align-items(center);
+    }
+    .btn-group {
+        .btn-default {
+            background: #3063cc;
+            /* color: #fff !important; */
+            display: flex;
+            height: 25px;
+            width: 25px;
+            align-items: center;
+            justify-content: center;
+            i {
+                color: $color-white;
+            }
+        }
+    }
+    position: relative;
+    .float-bar {
+        width: 150px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        display: block !important;
+        div {
+            display: block;
+            width: 100% !important;
+            a {
+                display: block;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+        }
+        select {
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        &--extended {
+            width: 230px;
+        }
+    }
+}
+
+.admin {
+    &__body {
+        table {
+            tr {
+                td {
+                    a {
+                        color: $color-secondary;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.block {
+    &.full {
+        table {
+            tr {
+                td {
+                    a {
+                        color: $color-secondary;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    &__equal {
+        min-height: 380px;
+    }
+    &--padding {
+        padding: 0 !important;
+        >div {
+            margin: 0;
+        }
+        table {
+            margin-bottom: 0;
+        }
+        .alert-info {
+            background: transparent;
+            border: 0;
+            color: #cca965;
+            font-weight: bold;
+        }
+    }
+}
+
+.btn-group {
+    a {
+        color: $color-primary;
+    }
+}
+
+td.text-center {
+    text-align: center !important;
+}
+
+.pagination {
+    li {
+        &.active {
+            a {
+                background: $color-secondary;
+            }
+        }
+        a {
+            @include transition(.3s);
+            color: $color-secondary;
+            &:hover {
+                background: $color-secondary;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+table {
+    tbody {
+        tr {
+            td {
+                padding: 5px 20px !important;
+                .btn-group {
+                    @include flex;
+                    flex-wrap: inherit !important;
+                }
+            }
+        }
+    }
+    &.table {
+        &__noborder {
+            tr,
+            td,
+            th {
+                border: none !important;
+            }
+        }
+        &--five {
+            tbody {
+                tr {
+                    td {
+                        vertical-align: middle !important;
+                        &:first-child {
+                            width: 35px !important;
+                            padding: 0 !important;
+                            text-align: center;
+                        }
+                        &:nth-child(2) {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+        &--two {
+            tbody {
+                tr {
+                    td {
+                        vertical-align: middle !important;
+                        &:last-child {
+                            width: 150px;
+                            padding-right: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.properties {
+    table {
+        thead {
+            tr {
+                th {
+                    &:first-child {
+                        width: 10%;
+                    }
+                    &:nth-child(2) {
+                        width: 30%;
+                    }
+                    &:nth-child(3) {
+                        width: 10%;
+                    }
+                    &:nth-child(4) {
+                        width: 15%;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    &:first-child {
+                        width: 10%;
+                    }
+                    &:nth-child(2) {
+                        width: 30%;
+                    }
+                    &:nth-child(3) {
+                        width: 10%;
+                    }
+                    &:nth-child(4) {
+                        width: 15%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// global heading 
+.table-responsive,
+#booking-table,
+#properties-table {
+    thead {
+        tr {
+            th {
+                font-size: 1em;
+                color: #000;
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                text-align: left;
+                .btn-group {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+#booking-table {
+    thead {
+        tr {
+            th {
+                &:nth-child(4),
+                &:nth-child(5) {
+                    width: 15%;
+                }
+                &:last-child {
+                    width: 7% !important;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.notification-bar {
+    height: 385px;
+    overflow: hidden;
+    .table-responsive {
+        height: 95%;
+    }
+}
+
+.notification {
+    &__item {
+        padding: 15px 45px !important;
+        position: relative;
+        border: 0;
+        small {
+            display: block;
+            color: $color-gray;
+        }
+        &--active {
+            &:before {
+                width: 10px;
+                height: 10px;
+                background: $color-orange;
+                position: absolute;
+                left: 20px;
+                top: 10px;
+                content: '';
+                top: 20px;
+                @include border-radius(100%);
+            }
+        }
+    }
+}
+
+.padding-reset {
+    padding: 0 !important;
+    .block-title {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.status {
+    position: relative;
+    padding-left: 28px !important;
+    &--active {
+        &:before {
+            background: $color-orange;
+            content: '';
+            width: 10px;
+            height: 10px;
+            display: block;
+            position: absolute;
+            @include border-radius(100%);
+            left: 10px;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+    }
+}
+
+.table-small-head {
+    table {
+        thead {
+            tr {
+                th {
+                    padding: 5px 10px !important;
+                    text-align: center;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    background: $color-lightgray;
+                }
+            }
+        }
+    }
+    .table-striped {
+        >tbody {
+            >tr {
+                &:nth-of-type(odd) {
+                    background: transparent;
+                }
+                &:nth-of-type(even) {
+                    background: $color-lightgray;
+                }
+                td {
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+.payment-information {
+    tr {
+        td {
+            &:first-child {
+                width: 30%;
+                text-align: right;
+                // strong {
+                //     font-weight: bold;
+                // }
+            }
+        }
+    }
+    &__label {
+        font-weight: bold;
+        display: block;
+    }
+    &__description {}
+}
+
+.payment-box {
+    &__label {
+        font-weight: bold;
+        text-align: right;
+        display: block;
+        padding: 5px 0px;
+    }
+    &__total {
+        color: $color-orange;
+        font-weight: 600;
+        font-size: 1.6em;
+    }
+    &__days {}
+    &__quantity {}
+    tr {
+        td {
+            &:first-child {
+                width: 50%;
+            }
+            padding: 10px 0;
+        }
+    }
+}
+
+.text-bold-right {
+    &__label {
+        font-weight: bold;
+        text-align: right;
+        display: block;
+        padding: 5px 0px;
+    }
+}
+
+.text-bold-left {
+    &__label {
+        font-weight: bold;
+        text-align: left;
+        display: block;
+        padding: 5px 0px;
+    }
+}
+
+.full-container {
+    margin: -20px -20px 20px;
+    background: #efefef;
+    border: 0;
+}
+
+.nav-tabs {
+    background: #fff;
+    li {
+        &.active {
+            a {
+                border: 0 !important;
+                /* background: #f00 !important; */
+                border-radius: 0;
+                color: #000;
+                font-weight: bold;
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 5px;
+                    background: #c19d4f;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+        a {
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 20px 30px;
+            color: #747474;
+            border: 0;
+            &:hover {
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 5px;
+                    background: #c19d4f;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.nav.navbar-nav-custom>li.open>a,
+.nav.navbar-nav-custom>li>a:hover,
+.nav.navbar-nav-custom>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus,
+a.sidebar-brand:hover,
+a.sidebar-brand:focus,
+a.sidebar-title:hover,
+a.sidebar-title:focus,
+#to-top:hover,
+.timeline-list .active .timeline-icon,
+.table-pricing.table-featured th,
+.table-pricing th.table-featured,
+.wizard-steps div.done span,
+.wizard-steps div.active span,
+.switch-primary input:checked+span,
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus,
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus,
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus,
+.pager>li>a:hover,
+.pagination>li>a:hover,
+.label-primary,
+.chosen-container .chosen-results li.highlighted,
+.chosen-container-multi .chosen-choices li.search-choice,
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active[disabled],
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active.disabled:hover[disabled],
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active:hover:hover,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover:hover,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:hover.active,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active:hover.disabled,
+.datepicker table tr td span.active.disabled.disabled,
+.datepicker table tr td span.active.disabled:hover.disabled,
+.datepicker table tr td span.active[disabled],
+.datepicker table tr td span.active:hover[disabled],
+.datepicker table tr td span.active.disabled[disabled],
+.datepicker table tr td span.active.disabled:hover[disabled],
+.bootstrap-timepicker-widget table td a:hover,
+div.tagsinput span.tag,
+.slider-selection,
+.themed-background,
+.select2-container--default .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.nav-horizontal a:hover,
+.nav-horizontal li.active a {
+    background-color: $color-primary;
+}
+
+.text-primary,
+.text-primary:hover,
+a,
+a:hover,
+a:focus,
+.nav-pills>.active>a>.badge,
+.pagination>li>a,
+.pagination>li>span,
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link.btn-icon:hover,
+.btn-link.btn-icon:focus,
+.themed-color {
+    color: $color-third;
+}
+
+.nav-horizontal i {
+    color: $color-third;
+}
+
+.content-header {
+    margin: 15px 0;
+}
+
+.table-responsive {
+    tbody {
+        tr {
+            td {
+                vertical-align: top;
+                span {
+                    margin-top: 0 !important;
+                    padding-top: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+.custom-radio,
+.custom-checkbox {
+    list-style: none;
+    // outline: 1px solid #f00;
+    &:after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+    &--inline-block {
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        @include flex;
+        @include flex-justify-content(flex-start);
+    }
+    &__item {
+        /* The container */
+        width: calc(100%/3);
+        margin: 0 !important;
+        &--holder {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            input {
+                &:checked {
+                    /* When the checkbox is checked, add a blue background */
+                    ~.checkmark {
+                        background-color: #2196F3;
+                        /* Show the checkmark when checked */
+                        &:after {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                input {
+                    /* On mouse-over, add a grey background color */
+                    ~.checkmark {
+                        background-color: #ccc;
+                    }
+                }
+            }
+            /* Hide the browser's default checkbox */
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+        }
+    }
+    /* Create a custom checkbox */
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // height: 25px;
+        // width: 25px;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border: 1px solid #c8c8c8;
+        right: 0;
+        margin: auto;
+        border-radius: 100%;
+        top: -3px;
+        /* Create the checkmark/indicator (hidden when not checked) */
+        &:after {
+            content: "\f00c";
+            position: absolute;
+            display: none;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-top: 1px;
+            color: $color-white;
+            font-size: 11px;
+        }
+        /* Style the checkmark/indicator */
+        &:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        &--boxstyle {
+            &:after {
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                // width: 15px;
+                // height: 15px;
+                width: 14px;
+                height: 14px;
+                // background: #cda85a;
+                background: #3063cc;
+                border-radius: 100%;
+                border: 0;
+                transform: inherit;
+            }
+        }
+    }
+}
+
+.modal {
+    .modal-header {
+        background: #05677a;
+        color: #fff;
+        border-radius: 0;
+    }
+    .modal-footer {
+        .btn-default,
+        button {
+            border-radius: 0 !important;
+            padding: 10px 20px;
+        }
+    }
+    .modal-content {
+        form {
+            padding: 0 15px !important;
+            input,
+            select,
+            textarea {
+                border: 1px solid #ddd;
+                border-radius: 0;
+                display: block !important;
+                height: auto;
+            }
+        }
+    }
+}
+
+.file-upload-button {
+    input {
+        padding-top: 0;
+    }
+}
+
+.file-upload-image-output {
+    padding: 50px;
+}
+
+.sweet-alert {
+    border-radius: 0 !important;
+    .sa-button-container {
+        button {
+            background: $color-primary !important;
+            padding: 8px 70px !important;
+            border-radius: 0 !important;
+        }
+    }
+    .sa-icon.sa-success {
+        .sa-placeholder {
+            border: 4px solid rgba(1, 65, 77, 0.4) !important;
+        }
+        .sa-line {
+            background: $color-primary !important;
+        }
+    }
+}
+
+.sweet-alert.showSweetAlert {
+    .sa-button-container {
+        @include flex;
+        @include flex-justify-content(center);
+        button {
+            padding: 8px 50px !important;
+        }
+    }
+}
+
+// Method 1) Pure CSS
+.star-ratings-css {
+    unicode-bidi: bidi-override;
+    color: #c5c5c5;
+    font-size: 25px;
+    height: 30px;
+    width: 135px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    text-shadow: 0px 1px 0 #a2a2a2;
+    overflow: hidden;
+    margin-left: 0;
+    &-top {
+        color: #dbc391;
+        padding: 0;
+        position: absolute;
+        z-index: 1;
+        display: block;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    &-bottom {
+        padding: 0;
+        display: block;
+        z-index: 0;
+    }
+}
+
+#sidebar-scroll {
+    background: $color-fourth;
+    .sidebar-user {
+        background: rgba(25, 55, 79, 1);
+    }
+}
+
+header.navbar.navbar-inverse.navbar-fixed-top {
+    background: $color-primary;
+}

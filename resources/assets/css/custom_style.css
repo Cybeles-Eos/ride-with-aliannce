@@ -1,0 +1,20 @@
+.johnCena, .template {
+    display: none !important;
+}
+
+.widget-advanced-alt .widget-header {
+    height: auto;
+    min-height: 100px;
+}
+
+.has-error .form-control:read-only {
+    background-color: #eee;
+}
+
+.preloader .inner {
+    top: 35%;
+}
+
+.g-recaptcha > div {
+    width: 100% !important;
+}
