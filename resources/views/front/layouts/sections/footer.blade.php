@@ -1,92 +1,76 @@
-<a href="#" id="to-top"><i class="fas fa-chevron-up"></i></a>
-<footer class="footer">
+<div class="footer-cta-section">
+    <div class="global-size global-padding">
+        <h2>
+            Schedule Your Alliance NEMT Ride Today
+        </h2>
+        <p>Whether you need a one-time ride or recurring transportation, Alliance Dispatch is ready to help with safe, respectful, door-to-door NEMT service.</p>
+        <div class="footer-cta-section--buttons">
+            <a href="{{ url('contact-us') }}" class="btn--primary">
+                Book Your Ride Today
+                <div class="btn--primary--icon">
+                    <div>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.0921 7.25872C19.1337 6.21706 18.6587 5.00039 18.0921 4.40872L15.5921 1.90872C14.5421 0.867055 13.3337 1.34206 12.7421 1.90872L11.3254 3.33372H9.16706C7.58372 3.33372 6.66706 4.16706 6.20039 5.12539L2.50039 8.82539V12.1587L1.90872 12.7421C0.867055 13.7921 1.34206 15.0004 1.90872 15.5921L4.40872 18.0921C4.85872 18.5421 5.34206 18.7087 5.80039 18.7087C6.39206 18.7087 6.93372 18.4171 7.25872 18.0921L9.50872 15.8337H12.5004C13.9171 15.8337 14.6337 14.9504 14.8921 14.0837C15.8337 13.8337 16.3504 13.1171 16.5587 12.4171C17.8504 12.0837 18.3337 10.8587 18.3337 10.0004V7.50039H17.8421L18.0921 7.25872ZM16.6671 10.0004C16.6671 10.3754 16.5087 10.8337 15.8337 10.8337H15.0004V11.6671C15.0004 12.0421 14.8421 12.5004 14.1671 12.5004H13.3337V13.3337C13.3337 13.7087 13.1754 14.1671 12.5004 14.1671H8.82539L6.09206 16.9004C5.83372 17.1421 5.68372 17.0004 5.59206 16.9087L3.10039 14.4254C2.85872 14.1671 3.00039 14.0171 3.09206 13.9254L4.16706 12.8421V9.50872L5.83372 7.84206V9.16706C5.83372 10.1754 6.50039 11.6671 8.33372 11.6671C10.1671 11.6671 10.8337 10.1754 10.8337 9.16706H16.6671V10.0004ZM16.9087 6.07539L15.4921 7.50039H9.16706V9.16706C9.16706 9.54206 9.00872 10.0004 8.33372 10.0004C7.65872 10.0004 7.50039 9.54206 7.50039 9.16706V6.66706C7.50039 6.28372 7.64206 5.00039 9.16706 5.00039H12.0087L13.9087 3.10039C14.1671 2.85872 14.3171 3.00039 14.4087 3.09206L16.9004 5.57539C17.1421 5.83372 17.0004 5.98372 16.9087 6.07539Z" fill="#212121"/>
+                        </svg>
 
-    <div class="footer__top">
-        <section class="dotted">
-            <div class="padding--bottom2em">
-                <div class="dotted__wrapper">
-                    <div class="col-md-12 text-center">
-                        <h6>adasdasdasd</h6>
-                    </div>                    
-                </div>
-            </div> {{-- end of default-content--row --}}
-        </section> {{-- end of default-content --}}
-    </div>
-
-    <div class="footer__menu container">
-        <div class="footer__wrapper--row row">
-            <div class="col-lg-6 footer__item">
-                <article>
-                    <h4>
-                        <a href="">Our Research</a>
-                    </h4>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul>
-                                <li><a href="">Departments</a>
-                                    <ul>
-                                        <li><a href="">asdasdasd</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li><a href="javascript:void(0)">Stories</a></li>
-                                <li><a href="javascript:void(0)">Publications</a></li>
-                                <li><a href="javascript:void(0)">Gallery</a></li>
-                                <li><a href="javascript:void(0)">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>                    
-                </article>
-            </div>
-            <div class="col-lg-3 footer__item">
-                <article>
-                    <h4>
-                        <a href="javascript:void(0)">Our Enabling Technology</a>
-                    </h4>
-                    <ul>
-                        <li><a href="javascript:void(0)">Data Sciences/Bioinformatics</a></li>
-                        <li><a href="javascript:void(0)">Engineering/Automation</a></li>
-                        <li><a href="javascript:void(0)">Genomics</a></li>
-                        <li><a href="javascript:void(0)">Products</a></li>                        
-                    </ul>
-                </article>
-            </div>
-            <div class="col-lg-3 footer__item">
-                <article>
-                    <h4>
-                        <a href="javascript:void(0)">About Us</a>
-                    </h4>
-                    <ul>
-                        <li><a href="javascript:void(0)">About</a></li>
-                        <li><a href="javascript:void(0)">Leadership</a></li>
-                        <li><a href="javascript:void(0)">Careers</a></li>
-                    </ul>
-                    <div class="footer__social">
-                        <h4>Stay Connected</h4>
-                        <ul>
-                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.0921 7.25872C19.1337 6.21706 18.6587 5.00039 18.0921 4.40872L15.5921 1.90872C14.5421 0.867055 13.3337 1.34206 12.7421 1.90872L11.3254 3.33372H9.16706C7.58372 3.33372 6.66706 4.16706 6.20039 5.12539L2.50039 8.82539V12.1587L1.90872 12.7421C0.867055 13.7921 1.34206 15.0004 1.90872 15.5921L4.40872 18.0921C4.85872 18.5421 5.34206 18.7087 5.80039 18.7087C6.39206 18.7087 6.93372 18.4171 7.25872 18.0921L9.50872 15.8337H12.5004C13.9171 15.8337 14.6337 14.9504 14.8921 14.0837C15.8337 13.8337 16.3504 13.1171 16.5587 12.4171C17.8504 12.0837 18.3337 10.8587 18.3337 10.0004V7.50039H17.8421L18.0921 7.25872ZM16.6671 10.0004C16.6671 10.3754 16.5087 10.8337 15.8337 10.8337H15.0004V11.6671C15.0004 12.0421 14.8421 12.5004 14.1671 12.5004H13.3337V13.3337C13.3337 13.7087 13.1754 14.1671 12.5004 14.1671H8.82539L6.09206 16.9004C5.83372 17.1421 5.68372 17.0004 5.59206 16.9087L3.10039 14.4254C2.85872 14.1671 3.00039 14.0171 3.09206 13.9254L4.16706 12.8421V9.50872L5.83372 7.84206V9.16706C5.83372 10.1754 6.50039 11.6671 8.33372 11.6671C10.1671 11.6671 10.8337 10.1754 10.8337 9.16706H16.6671V10.0004ZM16.9087 6.07539L15.4921 7.50039H9.16706V9.16706C9.16706 9.54206 9.00872 10.0004 8.33372 10.0004C7.65872 10.0004 7.50039 9.54206 7.50039 9.16706V6.66706C7.50039 6.28372 7.64206 5.00039 9.16706 5.00039H12.0087L13.9087 3.10039C14.1671 2.85872 14.3171 3.00039 14.4087 3.09206L16.9004 5.57539C17.1421 5.83372 17.0004 5.98372 16.9087 6.07539Z" fill="#212121"/>
+                        </svg>
                     </div>
-                </article>
-            </div>
+                </div>
+            </a>
+            <a href="{{ url('/') }}" class="btn--secondary">
+                Get In Touch
+            </a>
         </div>
     </div>
-    <div class="footer__copyright">
-        <div class="container">
-            <div class="footer__wrapper--row row">
-                <div class="col-lg-9 footer__item">
-                    © 2020 Custom Template Web Design by <a href="https://montecarlowebgraphics.com/" target="_blank">Monte Carlo Web Graphics Studio, Inc.</a>  |  <a href="{{url('terms-of-use')}}">Terms of Use</a>  |  <a href="{{url('privacy-policy')}}">Privacy policy</a>
+</div>
+<footer>
+    <div class="footer-container global-size global-padding">
+        <div class="footer-container--main"> 
+            <div class="footer-container--main--info">
+                <a href="#" class="foo-logo-cta">
+                    <img src="{{ asset('public/images/footer-logo.png') }}" alt="rwa-logo">
+                </a>
+
+                <p>Whether you need a one-time ride or recurring transportation, Alliance Dispatch is ready to help with safe, respectful, door-to-door NEMT service.</p>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="col-lg-2 footer__item footer__item__addlinfo text-center">
-                    <a href="//www.novartis.com/" target="_blank"><img src="{{ url('public/images/header/logo.jpg') }}"></a>
-                    <p><small>Company</small></p>
+            </div>
+            <div class="footer-container--main--links">
+                <div>
+                    <h3>Website Links</h3>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Who We Serve</a>
+                    <a href="#">Contact Us</a>
                 </div>
+                <div>
+                    <h3>Services</h3>
+                    <a href="#">Wheelchair Transport</a>
+                    <a href="#">Dialysis Transport</a>
+                    <a href="#">Senior Transport</a>
+                    <a href="#">Stretcher Transport</a>
+                    <a href="#">Hospital Discharge</a>
+                </div>
+                <div>
+                    <h3>Contacts</h3>
+                    <a href="#">Phone: (123) 456-7890</a>
+                    <a href="#">Email: info@ridewithalliance.com</a>
+                    <a href="#">Address: 123 Main St, City, State 12345</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container--foo">
+            <p>Non Copyrighted © {{ date('Y') }} Ride With Alliance</p>
+
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
             </div>
         </div>
     </div>

@@ -3,6 +3,16 @@
     padding-right: 0;
 }
 
+.global-size{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.global-padding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 body {
     font-family: $font-primary;
     // background-image: url('../images/overlay.jpg');

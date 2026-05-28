@@ -48520,9 +48520,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\laravel-template\resources\assets\js\app.js */"./resources/assets/js/app.js");
-__webpack_require__(/*! C:\xampp\htdocs\laravel-template\resources\assets\scss\app.scss */"./resources/assets/scss/app.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\laravel-template\resources\assets\scss\admin-control.scss */"./resources/assets/scss/admin-control.scss");
+__webpack_require__(/*! D:\xampp\htdocs\ride-with-alliance\resources\assets\js\app.js */"./resources/assets/js/app.js");
+__webpack_require__(/*! D:\xampp\htdocs\ride-with-alliance\resources\assets\scss\app.scss */"./resources/assets/scss/app.scss");
+module.exports = __webpack_require__(/*! D:\xampp\htdocs\ride-with-alliance\resources\assets\scss\admin-control.scss */"./resources/assets/scss/admin-control.scss");
 
 
 /***/ })

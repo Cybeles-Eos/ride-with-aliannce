@@ -1,69 +1,124 @@
 .btn {
     &--primary {
-        background: $color-red2;
-        border: 2px solid transparent;
-        color: $color-white;
-        padding: 8px 44px;
-        font-family: $font-third;
-        font-weight: normal;
-        border-radius: 3px;
-        font-size: 18px;
-        text-align: center;
-        @include transition(.5s);
+        background: $color-primary;
+        border: 0;
+        padding: 5px 25px;
+        padding-right: 55px;
+        font-weight: 500;
+        border-radius:65px;
+        font-size: 14px;
+        color: $color-dark; 
+        display: flex;
+        align-items: center;
+        gap: 10px;
         text-decoration: none !important;
-        text-transform: uppercase;
-        @media only screen and (max-width: $mobile) {
-            padding: 10px 30px;
-            font-size: .9em;
-            width: 90%;
-            display: block;
-            margin: auto;
+        width: fit-content;
+        height: 45px;
+        position: relative;
+        line-height: 100%;
+        transition: .2s;
+        &--icon{
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            background: $color-white;
+            position: absolute;
+            right: 5px;
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            padding-top: 7px;
+            overflow: hidden;
+            div{
+                width: 28px;
+                min-height: 68px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                transition: .2s;
+            }
         }
         &:hover {
-            color: $color-black;
-            border: 2px solid $color-black;
-            background: $color-white;
+            color: $color-dark;
+            transform: rotate(-2deg);
+            .btn--primary--icon {
+                div {
+                    transform: translateY(-47px);
+                }
+            }
         }
-        &--inverse {
-            color: $color-black;
-            border: 2px solid $color-black;
-            background: $color-white;
-            padding: 8px 44px;
-            font-family: $font-third;
-            font-weight: normal;
-            border-radius: 3px;
-            font-size: 18px;
-            text-align: center;
-            @include transition(.5s);
-            text-decoration: none !important;
-            text-transform: uppercase;
-            &:hover {
-                background: $color-red2;
-                border: 2px solid transparent;
-                color: $color-white;
+        @media (max-width: 592px) {
+            height: 41px;
+            padding: 5px 20px;
+            padding-right: 45px;
+            &--icon{
+                width: 31px;
+                height: 31px;
+                padding-top: 5px;
             }
         }
     }
-    &--secondary {
-        background: $color-third;
-        border: 0;
-        padding: 17px 44px;
-        font-weight: 900;
-        border-radius: 0;
-        font-size: 1em;
+    &--link{
+        padding: 5px 25px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
         color: $color-white;
-        @include border-radius(100px);
-        @include transition(.3);
-        @media only screen and (max-width: $mobile) {
-            padding: 10px 30px;
-            font-size: .9em;
-            width: 90%;
-            display: block;
-            margin: auto;
-        }
+        text-decoration: underline !important;
+        display: inline-block;
+
         &:hover {
             color: $color-white;
-            background: $color-primary;
+            opacity: 0.9;
+        }
+    }
+    &--navbtn{
+        background: $color-primary;
+        border: 0;
+        padding: 6px 25px;
+        font-weight: 500;
+        border-radius: 8px;
+        font-size: 14px;
+        color: $color-dark; 
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none !important;
+        width: fit-content;
+        height: 42px;
+        position: relative;
+        line-height: 100%;
+        transition: .2s;
+
+        &:hover {
+            color: $color-dark;
+            // transform: rotate(-3deg);
+
+        }
+    }
+    &--secondary{
+        background: transparent;
+        border: 1px solid $color-primary;
+        padding: 6px 25px;
+        font-weight: 500;
+        border-radius: 66px;
+        font-size: 14px;
+        color: $color-white; 
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none !important;
+        width: fit-content;
+        height: 42px;
+        position: relative;
+        line-height: 100%;
+        transition: .2s;
+
+        &:hover {
+            color: $color-white;
+            // transform: rotate(-3deg);
+
         }
     }
     &--search {

@@ -1,29 +1,91 @@
-// .primary-heading {
-//     margin-bottom: 45px;
-//     h2 {
-//          font-size: 3.6em;
-//          span {
-//          }
-//     }
-// }
-// .secondary-heading {
-//     h2 {
-//         font-weight: 900;
-//         font-size: 3.6em;
-//         color: $color-secondary;
-//         margin-bottom: 35px;
-//     }
-// }
-.heading-primary {
-    margin-bottom: 25px;
-    h2,
-    h3 {
-        margin-bottom: 0 !important;
-        font-weight: bold;
-        color: $color-navy;
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: $font-primary;
+    margin-bottom: 15px;
+    line-height: 120%;
+
+    span {
+        color: $color-primary;
     }
-    p {
-        font-size: 1.6em !important;
-        line-height: 30px;
+    .change-typo{
+        font-family: $font-secondary;
     }
+    @media only screen and (max-width: 992px) {
+        font-size: 40px;
+    }
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: $font-primary;
+    margin-bottom: 15px;
+    line-height: 120%;
+
+    span {
+        color: $color-primary;
+    }
+    .change-typo{
+        font-family: $font-secondary;
+    }
+    @media only screen and (max-width: 992px) {
+        font-size: 31px;
+    }
+}
+
+h3{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: $font-primary;
+    margin-bottom: 10px;
+    line-height: 100%;
+
+    span {
+        color: $color-primary;
+    }
+    .change-typo{
+        font-family: $font-secondary;
+    }
+    @media only screen and (max-width: 992px) {
+        font-size: 18px;
+    }
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: $font-primary;
+    margin-bottom: 10px;
+    line-height: 150%;
+
+    span {
+        color: $color-primary;
+    }
+    .change-typo{
+        font-family: $font-secondary;
+    }
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $font-primary;
+    margin-bottom: 10px;
+    line-height: 150%;
+    opacity: 0.9;
+    @media only screen and (max-width: 592px) {
+        font-size: 14px;
+    }
+}
+
+.g-pret{
+    font-size: 14px;
+    font-weight: normal;
+    font-family: $font-primary;
+    margin-bottom: 10px;
+    line-height: 150%;
+    opacity: 0.5;
+    text-transform: uppercase;
 }
