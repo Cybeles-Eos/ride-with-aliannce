@@ -13,6 +13,92 @@
     padding-right: 20px;
 }
 
+.global-btns-con{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+
+    @media screen and (max-width: 491px) {
+        flex-wrap: wrap;
+        row-gap: 15px;
+        align-items: flex-start;
+    }
+}
+
+.global-testimonials{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+
+    &--image{
+        display: flex;
+        gap: 10px;
+
+        svg{
+            min-width: 20px;
+            min-height: 14px;
+        }
+        img{
+            max-width: 50px;
+            max-height: 50px;
+            border-radius: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+    }
+    &--detail{
+        h5{
+            font-size: 16px;
+            font-weight: 700;
+            color: $color-black;
+            margin-bottom: 5px !important;
+        }
+        p{
+            font-size: 14px;
+            color: $color-gray;
+            margin-bottom: 0 !important;
+            opacity: 0.8;
+            max-width: 400px;
+        }
+    }
+}
+
+
+.gcol{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 0;
+    display: inline-block;
+
+    &--cyan{
+        background-color: #E9FEFF;
+        color: #1ABEC5;
+    }
+    &--indigo{
+        background-color: #E7E9FF;
+        color: #4B5FD0;
+    }
+    &--yellow{
+        background-color: #FFF4DE;
+        color: #EFAF00;
+    }
+    &--red{
+        background-color: #FFE7E7;
+        color: #E74C4C;
+    }
+    &--green{
+        background-color: #E7F9F0;
+        color: #27AE60;
+    }
+    &--blue{
+        background-color: #E7F0FF;
+        color: #2B65EC;
+    }
+}
+
 body {
     font-family: $font-primary;
     // background-image: url('../images/overlay.jpg');
